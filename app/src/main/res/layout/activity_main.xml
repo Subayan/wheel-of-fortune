@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Wheel of Fortune"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="30dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/circle1"-->
+<!--        ></ImageView>-->
+
+<!--    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="392dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/circle1"></ImageView>
+        <ImageView
+            android:id="@+id/marker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/down"></ImageView>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RUN THE GAME"
+        android:onClick="turnTheWheel"
+        >
+    </Button>
+</LinearLayout>
